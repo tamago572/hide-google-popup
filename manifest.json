@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "hide google popup",
+    "version": "1.0.0",
+    "description": "Googleのポップアップを非表示にする拡張機能",
+    "content_scripts": [
+        {
+        "matches": ["https://www.google.com/*", "https://www.google.co.jp/*"],
+        "css": ["style.css"],
+        "js": ["content-script.js"]
+        }
+    ]
+}
