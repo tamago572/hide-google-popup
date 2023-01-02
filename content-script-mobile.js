@@ -3,7 +3,7 @@ const mobilePopup = document.querySelector('mobile-promo');
 
 try {
     mobilePopup.remove();
-    alert("ポップアップを非表示にしました。")
+    console.log("ポップアップを非表示にしました");
 } catch(e) {
-    alert("エラー")
+    console.log("ポップアップが存在しないか、エラーが発生しました。");
 }
