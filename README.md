@@ -5,7 +5,7 @@
 ユーザエージェントがPCの場合、次の要素を`document.getElementsByName("callout")[0];`で取得し、Styleを非表示にする(`display: none;`)。
 
 ```HTML
-<iframe role="presentation" frameborder="0" scrolling="no" name="callout" src="https://ogs.google.co.jp/widget/callout?prid=19031780&pgid=19031779&puid=4383e907e530840&cce=1&dc=1&origin=https%3A%2F%2Fwww.google.co.jp&cn=callout&pid=1&spid=538&hl=ja" style="height: 100%; width: 100%;">…</iframe>
+<iframe name="callout" …>…</iframe>
 ```
 
 ユーザエージェントがスマホの場合は次の要素を`document.querySelector("mobile-promo")`で取得し、`element.remove();`要素を削除する。
